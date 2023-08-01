@@ -14,7 +14,7 @@ import org.json.JSONObject;
 public class restApiCall {
 
 	private static final String API_URL = "https://samples.openweathermap.org/data/2.5/forecast/hourly?q=London,us&appid=b6907d289e10d714a6e88b30761fae22";
-	private final static String response = fetchDataFromAPI();
+	private static final  String response = fetchDataFromAPI();
 
 	public static void main(String[] args) {
 		displayMenu();
@@ -82,9 +82,9 @@ public class restApiCall {
 			double tempMin = mainData.getDouble("temp_min");
 			double tempMax = mainData.getDouble("temp_max");
 
-			System.out.println("\nTemperature for " + inputDate + ": " + temperature + " °K");
-			System.out.println("Minimum Temperature for " + inputDate + ": " + tempMin + " °K");
-			System.out.println("Maximum Temperature for " + inputDate + ": " + tempMax + " °K");
+			System.out.println("\nTemperature for " + inputDate + ": " + temperature + " Â°K");
+			System.out.println("Minimum Temperature for " + inputDate + ": " + tempMin + " Â°K");
+			System.out.println("Maximum Temperature for " + inputDate + ": " + tempMax + " Â°K");
 		} else {
 			System.out.println("\nWeather data not found for the input date.");
 		}
